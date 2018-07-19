@@ -108,11 +108,7 @@
             console.log("ok connected");
             privateChatHub.client.sendConnectedUsers = function(response) {
                 console.log(response);
-                var result = $.parseJSON(response);
-                console.log(result);
-                for (malakas in result) {
-                    console.log(malakas);
-                }
+                var result = $.parseJSON(response);               
 
 
             }
